@@ -7,9 +7,8 @@
     "test": "npm run test-pre && ./node_modules/karma/bin/karma start",
     "test-pre": "exit 0",
     "test-watch": "./node_modules/karma/bin/karma start --auto-watch --no-single-run",
-    "build": "npm run build-core && npm run build-dist",
-    "build-core": "browserify ./index.js -d -s Imager -o Imager.js",
-    "build-dist": "uglifyjs ./Imager.js -c -m -o ./Imager.min.js --source-map ./Imager.map.js && mv -f Imager.{map,min}.js ./dist"
+    "build": "npm run build-core",
+    "build-core": "browserify ./index.js -d -s Imager -o Imager.js"
   },
   "repository": {
     "type": "git",
