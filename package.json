@@ -28,7 +28,7 @@
   "license": "Apache-2.0",
   "browserify": {
     "transform": [
-      ["babelify", {"loose": ["es6.modules"]}]
+      ["babelify", {"loose": "all"}]
     ]
   },
   "devDependencies": {
